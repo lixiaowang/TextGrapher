@@ -2,12 +2,17 @@
 Text Content Grapher based on keyinfo extraction by NLP method。输入一篇文档，将文档进行关键信息提取，进行结构化，并最终组织成图谱组织形式，形成对文章语义信息的图谱化展示。
 # 项目介绍
 如何用图谱和结构化的方式，即以简洁的方式对输入的文本内容进行最佳的语义表示是个难题。　本项目将对这一问题进行尝试，采用的方法为：输入一篇文档，将文档进行关键信息提取，并进行结构化，并最终组织成图谱组织形式，形成对文章语义信息的图谱化展示。　　
+# 安装依赖 
+    requirements.txt
+# 模型文件
+    参考：https://github.com/HIT-SCIR/pyltp
+    新建一个ltp_data文件夹，下载	ltp_data_v3.4.0.zip 并解压到该路径下。
 # 使用方式
     from text_grapher import *
     content = '你要分析的文本'
     handler = CrimeMining()
     handler.main(content)
-结果保存在graph.html文件当中。　　
+参考demo.py，结果保存在graph.html文件当中。　　
 
 # 事件举例
 １) 中兴事件　
@@ -26,6 +31,4 @@ Text Content Grapher based on keyinfo extraction by NLP method。输入一篇文
 １）如何用图谱和结构化的方式，即以简洁的方式对输入的文本内容进行最佳的语义表示是个难题。  
 ２）本项目采用了高频词，关键词，命名实体识别，主谓宾短语识别等抽取方式，并尝试将三类信息进行图谱组织表示，这种表示方式是一种尝试。  
 ３）命名实体识别以及关键信息抽取受限于NLP的性能，在算法和方式上还存在多处不足。
-# Question?
- send mail to lhy_in_blcu@126.com  
- If any question about the project or me ,see https://liuhuanyong.github.io/
+
