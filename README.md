@@ -5,8 +5,8 @@ Text Content Grapher based on keyinfo extraction by NLP method。输入一篇文
 # 安装依赖 
     requirements.txt
 # 模型文件
-参考：https://github.com/HIT-SCIR/pyltp
-    新建一个ltp_data文件夹，下载 ltp_data_v3.4.0.zip 并解压到该路径下。
+参考：https://github.com/HIT-SCIR/pyltp、http://ltp.ai/download.html
+新建一个ltp_data文件夹，下载 ltp_data_v3.4.0.zip 并解压到该路径下。
 # 使用方式
     from text_grapher import *
     content = '你要分析的文本'
